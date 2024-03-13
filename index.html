@@ -1,36 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Testing Basics</title>
-    <style>
-      html {
-        font-family: sans-serif;
-      }
-
-      body {
-        margin: 2rem;
-      }
-
-      div,
-      label {
-        display: block;
-        margin-bottom: 0.5rem;
-      }
-    </style>
-    <script type="module" defer src="app.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on Mocks</title>
+    <script src="app.js" type="module" defer></script>
   </head>
   <body>
-    <form action="/calculate" method="POST">
+    <form>
       <div>
-        <label for="num1">First Number</label>
-        <input id="num1" name="num1" type="numeric" />
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" />
       </div>
       <div>
-        <label for="num2">Second Number</label>
-        <input id="num2" name="num2" type="numeric" />
+        <label for="content">Content</label>
+        <textarea id="content" name="content" rows="5"></textarea>
       </div>
-      <button>Calculate</button>
+      <button>Save Post</button>
+      <div id="errors"></div>
     </form>
-    <div id="result"></div>
   </body>
 </html>

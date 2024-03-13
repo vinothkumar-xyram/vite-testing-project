@@ -1,23 +1,20 @@
 {
-  "name": "basic-testing-frontend",
+  "name": "mocks-frontend",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "test": "vitest --run --reporter verbose",
-    "test:watch": "vitest",
-    "start": "http-server -c-1"
+    "start": "http-server -c-1",
+    "test": "vitest --run --environment happy-dom"
   },
   "keywords": [],
-  "author": "Vinoth Kumar Esthaki <vinoth.kumar@xyramsoft.com>",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "jsonwebtoken": "^8.5.1"
+    "http-server": "^14.1.0"
   },
   "devDependencies": {
-    "http-server": "^14.1.0",
-    "install": "^0.13.0",
-    "npm": "^8.6.0",
-    "vitest": "^0.9.0"
+    "happy-dom": "^2.55.0",
+    "vitest": "^0.9.3"
   }
 }
